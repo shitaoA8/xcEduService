@@ -11,8 +11,7 @@ public class FreemarkerController {
 
     //测试1
     @RequestMapping("/test1")
-    public String test(Map<String, Object> map) {
-        System.out.println("+++++++++++++++++------");
+    public String test1(Map<String, Object> map) {
         //map就是freemarker模板所使用的数据
         map.put("name","王二小");
         //返回freemarker模板的位置,基于resources/templates路径
